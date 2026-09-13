@@ -1,0 +1,29 @@
+<aside class="sidebar">
+
+    <div class="logo">
+        <%= image_tag "crystal.png" %>
+        <h2>Crystone</h2>
+    </div>
+
+    <nav>
+
+        <%= link_to root_path do %>
+            <i class="ti ti-home"></i>
+            Home
+        <% end %>
+
+        <%= link_to orders_path do %>
+            <i class="ti ti-briefcase"></i>
+            Serviços
+        <% end %>
+
+        <a href="#">
+            <i class="ti ti-users"></i>
+            Clientes
+        </a>
+        
+    </nav>
+
+    <a href="#" class="config"><i class="ti ti-settings"></i> Configurações</a>
+
+</aside>

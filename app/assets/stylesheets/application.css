@@ -8,3 +8,382 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+body { font-family: "Lato", sans-serif; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+.s-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    
+}
+.b-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.font-b {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.s-flex i {
+    font-size: 24px;
+    color: black;
+}
+
+.gr {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.m-r {
+    margin-right: 20px;
+}
+
+.sidebar {
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 20%;
+    background: #172033;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 5px 5px 0;
+    overflow-wrap: break-word;
+    position: fixed;
+}
+
+.topbar{
+    height: 50px;
+    border-bottom: 1.25px solid #c4dbdb62;
+    padding-right: 10px;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    color:#424b63
+    
+}
+
+.topbar i {
+    font-size: 18px;
+    color:black
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cdcfd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-icon i {
+  font-size: 20px;
+}
+
+.content {
+    width: 80%;
+    color: #424b63;
+    box-sizing: border-box;
+    padding: 0px 30px 0px 30px;
+    padding-bottom: 10px;
+    /* background-color: rgb(253, 253, 253); */
+    
+    margin-left: 20%;
+    margin-top: 0%;
+}
+
+.logo {
+    margin-top: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar h2 {
+    color: #bee8ff
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar a {
+    margin-left: 5px;
+    padding: 12px;
+    border-radius: 8px;
+    color: #b8beca;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #263653;
+    width: 80%;
+    color: #bee8ff
+}
+
+.config {
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.content h1 {
+    margin-bottom: 0px;
+    margin-top: 15px;
+    color: rgb(56, 56, 56);
+}
+
+.welcome {
+    font-size: 14px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card {
+    width: 20%;
+    height: 130px;
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.card-blue {
+    background-color: rgba(115, 188, 248, 0.178);
+    border-color: rgba(136, 198, 248, 0.212);
+}
+
+.card-green {
+    background-color: rgba(190, 253, 175, 0.274);
+    border-color: rgba(151, 240, 128, 0.349);
+}
+
+.card-yellow {
+    background-color: rgba(243, 248, 172, 0.363);
+    border-color: rgba(234, 241, 128, 0.76);
+}
+
+
+.card-purple {
+    background-color: rgba(232, 214, 247, 0.336);
+    border-color: rgba(225, 172, 250, 0.24);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-quantity {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-details {
+    margin-top: 5px;
+}
+
+.icon-background {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cdcfd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-b-blue {
+    background-color: #bdd9fe;
+    color: #0e58f0;
+    font-size: 24px;
+}
+
+.i-b-yellow {
+    background-color: #fce793;
+    color: #c85b01;
+    font-size: 24px;
+}
+
+.i-b-green {
+    background-color: #bdfec2;
+    color: #009200;
+    font-size: 24px;
+}
+
+.i-b-purple {
+    background-color: #d6bdfe;
+    color: #5d0092;
+    font-size: 24px;
+}
+
+.info-tables {
+    font-size: 14px;
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    
+}
+
+td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+table td,
+table th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-header {
+    margin: 0;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    border-bottom: 1px solid #c4dbdb62;
+    align-items: center;
+}
+.section-header h2 {
+    margin: 10px 0 10px 0;
+}
+
+.table-services-a {
+    background-color: white;
+    width: 60%;
+    border-radius: 6px;
+    border: 1.25px solid #c4dbdb62;
+    padding: 0 15px 15px 15px;
+}
+
+.table-services-b {
+    background-color: white;
+    width: 40%;
+    border-radius: 6px;
+    border: 1.25px solid #c4dbdb62;
+    padding: 0 15px 15px 15px;
+}
+.table-services td {
+    border-bottom: 1px solid #c4dbdb62;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    width: 400px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.modal h2 {
+    margin: 5px;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+.modal-title div {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-close {
+    position: relative;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.button-close::before,
+.button-close::after {
+    content: "";
+
+    position: absolute;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: #6b7280;
+
+    top: 50%;
+    left: 50%;
+}
+
+.button-close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.button-close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.button-close:hover::before,
+.button-close:hover::after {
+    background-color: #333;
+}
