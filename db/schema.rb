@@ -10,5 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 0) do
+ActiveRecord::Schema[8.1].define(version: 2026_09_20_203520) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "pg_catalog.plpgsql"
+
+  create_table "customers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "email"
+    t.boolean "is_active"
+    t.string "nome"
+    t.string "telefone"
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "custom_customer_name"
+    t.bigint "customer_id", null: false
+    t.date "delivery_date"
+    t.text "description"
+    t.decimal "paid_amount"
+    t.string "status"
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.decimal "value"
+    t.index ["customer_id"], name: "index_orders_on_customer_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "email"
+    t.boolean "is_active"
+    t.string "nome"
+    t.string "password_digest"
+    t.string "role"
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "orders", "customers"
+  add_foreign_key "orders", "users"
 end

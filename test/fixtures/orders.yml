@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  customer: one
+  custom_customer_name: MyString
+  description: MyText
+  value: 9.99
+  partial_payment: 9.99
+  status: MyString
+  delivery_date: 2026-09-20
+
+two:
+  user: two
+  customer: two
+  custom_customer_name: MyString
+  description: MyText
+  value: 9.99
+  partial_payment: 9.99
+  status: MyString
+  delivery_date: 2026-09-20
