@@ -1,0 +1,15 @@
+.content-orders {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.content-orders input {
+    width: 30%;
+}
+
+.content-orders select {
+    width: 20%;
+}

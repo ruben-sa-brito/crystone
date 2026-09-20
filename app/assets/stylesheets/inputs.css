@@ -1,0 +1,36 @@
+input {
+    height: 40px;
+    padding: 0 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    background-color: white;
+    color: #424b63;
+
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #042861;
+}
+
+select {
+    height: 40px;
+    padding: 0 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    background-color: white;
+    color: #424b63;
+
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #042861;
+}

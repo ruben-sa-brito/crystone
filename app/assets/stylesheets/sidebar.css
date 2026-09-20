@@ -1,0 +1,36 @@
+.sidebar {
+    font-size: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 20%;
+    background: #172033;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 5px 5px 0;
+    overflow-wrap: break-word;
+    position: fixed;
+}
+.sidebar h2 {
+    color: #bee8ff
+}
+
+.sidebar nav {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar a {
+    margin-left: 5px;
+    padding: 12px;
+    border-radius: 8px;
+    color: #b8beca;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #263653;
+    width: 80%;
+    color: #bee8ff
+}

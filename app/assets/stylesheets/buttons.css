@@ -1,0 +1,21 @@
+.button-blue {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button-blue:hover {
+    background-color: #1b5bc2;
+}
+
+.card-buttons {
+    width: 75px;
+    height: 40px;
+    border: 1px solid;
+    border-bottom: none;
+    background-color: rgb(241, 241, 241);
+    border-color: rgb(226, 226, 226);
+}

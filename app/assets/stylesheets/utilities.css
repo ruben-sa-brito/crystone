@@ -1,0 +1,33 @@
+.pointer {
+    cursor: pointer;
+}
+
+.mt-3 {
+    margin-top: 10px;
+
+}
+
+.mt-5 {
+    margin-top: 20px;
+
+}
+
+.mt-7 {
+    margin-top: 25px;
+
+}
+
+.radius-bl {
+    border-bottom-left-radius: 6px;
+}
+.radius-br {
+    border-bottom-right-radius: 6px;
+}
+
+.border-l-none{
+    border-left: none;
+}
+
+.border-r-none{
+    border-left: none;
+}

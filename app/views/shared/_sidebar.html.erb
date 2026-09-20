@@ -13,14 +13,19 @@
         <% end %>
 
         <%= link_to orders_path do %>
-            <i class="ti ti-briefcase"></i>
+            <i class="ti ti-notes"></i>
             Serviços
         <% end %>
 
-        <a href="#">
+        <%= link_to customers_path do %>
             <i class="ti ti-users"></i>
             Clientes
-        </a>
+        <% end %>
+
+        <%= link_to employees_path do %>
+            <i class="ti ti-briefcase"></i>
+            Funcionarios
+        <% end %>
         
     </nav>
 

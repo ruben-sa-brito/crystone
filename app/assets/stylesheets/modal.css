@@ -1,0 +1,72 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.modal h2 {
+    margin: 5px;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+.modal-title div {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-close {
+    position: relative;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.button-close::before,
+.button-close::after {
+    content: "";
+
+    position: absolute;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: #6b7280;
+
+    top: 50%;
+    left: 50%;
+}
+
+.button-close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.button-close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.button-close:hover::before,
+.button-close:hover::after {
+    background-color: #333;
+}

@@ -1,0 +1,87 @@
+<div class="welcome">
+<div class="content-orders">
+    <div class="b-flex m-r">
+        <div class="s-flex gr">
+        <i class="ti ti-users"></i>  <div>Clientes</div>
+        </div>
+
+        <button class="button-blue" onclick="document.querySelector('#modal').showModal()"> + Novo Cliente </button>
+        </div>
+        <div class="s-flex">
+        <input
+            type="search"
+            placeholder="Buscar por nome, telefone ou email.."
+        > 
+        <button class="button-blue"> Buscar </button>
+        </div>
+        </div>
+    </div>
+
+    <section class="table-services m-t text-lg">
+
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>João Silva</td>
+                    <td>(88) 9.9257-3040</td>
+                    <td>joaodasilva@gmail.com</td>
+                    <td class="c-flex"> <i class="ti ti-edit pointer text-xl"></i> <i class="ti ti-trash pointer text-xl"></i> </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+</div>
+
+
+<dialog id="modal">
+<div class="modal">
+   <div class="modal-title">
+      <div>Novo serviço</div>
+      <button type="button" class="button-close" onclick="document.querySelector('#modal').close()">
+         
+      </button>
+   </div>
+   <div>
+   <form class="flex flex-col gap-4">
+    <input
+        type="text"
+        placeholder="Descrição"
+        class="w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+    >
+
+    <input
+        type="number"
+        placeholder="Valor"
+        class="w-full rounded-md border border-gray-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+    >
+
+    <div class="flex justify-end gap-2">
+        <button
+            type="button"
+            onclick="document.querySelector('#modal').close()"
+            class="rounded-md border border-gray-300 px-4 py-2 text-gray-700 hover:bg-gray-100"
+        >
+            Cancelar
+        </button>
+
+        <button
+            type="submit"
+            class="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
+        >
+            Cadastrar
+        </button>
+    </div>
+</form>
+   </div>
+</div>
+</dialog>
