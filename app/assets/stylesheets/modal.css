@@ -1,14 +1,19 @@
+dialog#modal {
+    width: 470px;
+}
 .modal {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 15px;
 
 }
 
-.modal h2 {
-    margin: 5px;
+.modal turbo-frame {
+    width: 100%;
 }
 
 .modal-title {
@@ -17,10 +22,6 @@
     align-items: flex-start;
     width: 100%;
     
-}
-.modal-title div {
-    margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 .modal form {

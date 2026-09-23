@@ -1,0 +1,17 @@
+<dialog id="<%= id %>">
+  <div class="modal">
+
+    <div class="modal-title">
+      <div><%= title %></div>
+
+      <button
+        type="button"
+        class="button-close"
+        onclick="this.closest('dialog').close()">
+      </button>
+    </div>
+
+    <%= yield %>
+
+  </div>
+</dialog>

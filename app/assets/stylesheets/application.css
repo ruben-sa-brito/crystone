@@ -40,6 +40,14 @@ body { font-family: "Lato", sans-serif; }
     
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
 .button-cards-layout {
     display: flex;
     justify-content: center;

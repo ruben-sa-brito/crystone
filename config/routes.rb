@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
  
   root "home#index"
+  
   get "orders", to: "orders#index"
   get "customers", to: "customers#index"
-   get "employees", to: "employees#index"
+
+  get "employees", to: "employees#index"
+  post "employees", to: "employees#create"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

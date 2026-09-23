@@ -34,3 +34,31 @@ select {
 select:focus {
     border-color: #042861;
 }
+
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.gap-10 {
+    gap: 10px
+}
+
+.gap-25 {
+    gap: 25px
+}

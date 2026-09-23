@@ -11,6 +11,19 @@
     background-color: #1b5bc2;
 }
 
+.button-red {
+    background-color: #f63b64;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button-red:hover {
+    background-color: #d3153e;
+}
+
 .card-buttons {
     width: 75px;
     height: 40px;
